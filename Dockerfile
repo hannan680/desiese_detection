@@ -11,4 +11,4 @@ COPY . ./app
 EXPOSE 80
 
 
-CMD ["web:uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "${PORT:-5000}"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "${PORT:-5000}"]
