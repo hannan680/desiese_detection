@@ -22,7 +22,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("./model/CropSense.h5")
+MODEL = tf.keras.models.load_model("./models/CropSense.h5")
 
 CLASS_NAMES = ['Early_Blight_Potato',
  'Healthy_Potato',
